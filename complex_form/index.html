@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Form Lab</title>
+        <meta name="description" content="a brief description">
+        <meta name="author" content="Your Site name">
+        
+        <!-- Open Graph Protocol -->
+        <!--
+        <meta property="og:title" content="A brief description">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.mywebsite">
+        <meta property="og:description" content="A brief description">
+        <meta property="og:image" content="image.png">
+        -->
+
+        <!-- For Icons
+        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="/favicon.ico" type="image/svl_xml">
+        <link rel="apple-tough-icon" href="/apple-touch-icon.png">
+        -->
+
+        <!-- Include CSS files here -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- Add your website name or logo here -->
+            <p>Header</p>
+        </header>
+        <nav>
+            <!-- Add your website navigation here -->
+        </nav>
+        <main>
+            <h1> Sign Up for this Form</h1>
+            <form method="POST">
+                <div>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname" required minlength="2">
+                </div>
+                <div>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" required minlength="2">
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <br>
+                    <fieldset id="quantity">
+                        <label>
+                            <input type="radio" value="1" name="quantity" checked> 1 cookie
+                        </label>
+                        <label>
+                            <input type="radio" value="2" name="quantity"> 2 cookies
+                        </label>
+                        <label>
+                            <input type="radio" value="3" name="quantity"> 3 cookies
+                        </label>
+                    </fieldset>
+                    
+                </div>
+                <div>
+                    <label for="location">Your Country:</label><br>
+                    <input list="location" name="location">
+                    <datalist id="location">
+                        <option value="USA">
+                        <option value="Canada">
+                        <option value="Mexico">
+                         
+                    </datalist>
+                </div>
+                <div>
+                    <label for="hotel">Your Hotel:</label><br>
+                    <select id="hotel" name="hotel_list">
+                        <option value="Best Western">Best Western</option>
+                        <option value="Hotel 2">Other Hotel</option>
+                        <option value="Hotel 3">Other other Hotel</option>
+                         
+                    </select>
+                </div>
+                <br>
+                <input type="submit" value="Sign Up">
+                
+            </form>
+
+        </main>
+
+        <footer>
+            <!-- Add copyright notices and other footer content here -->
+            <p>Footer</p>
+        </footer>
+        
+        <!-- Inlude your JavaScript files here -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
